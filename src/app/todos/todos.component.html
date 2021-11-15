@@ -1,0 +1,13 @@
+
+    <div class="parent">
+        <div>
+            <input [(ngModel)]="name" placeholder="New task...">&nbsp; 
+            <button (click)="add()" class="add">add</button> &nbsp; 
+            <button (click)="clearAll()" class="clearAll">clear</button>
+        </div>  
+        <div class="names">
+            <div class="myTask">My task list</div>
+            <app-todo *ngFor="let item of toDos$ | async; let i = index; trackBy: trackByFn"
+             [index]='i' [name]='item'></app-todo>
+        </div>
+    </div>

@@ -1,0 +1,42 @@
+.parent{
+    display: flex;
+}
+.clear,.clearAll,.add{
+    width: 30px;
+    background: orangered;
+    border: none;
+    border-radius: 15%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    height: 24px;
+}
+.names{
+    width: 1300px;
+    margin-left: 50px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid grey;
+    align-items: center;
+    padding: 14px;
+}
+.myTask{
+    text-align: center;
+    color: #fff;
+    background: hsl(208deg 56% 46%);
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: arial;
+}
+.clearAll,.add{
+    width: 100px;
+    border-radius: 0;
+}
+.add{
+    background-color: green;
+}
